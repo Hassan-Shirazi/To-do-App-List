@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stunning To-Do App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app-container">
+        <header>
+            <h1>My Tasks</h1>
+            <div id="date"></div>
+        </header>
+
+        <form id="new-task-form">
+            <input 
+                type="text" 
+                id="new-task-input" 
+                placeholder="What do you have planned?"
+                autocomplete="off"
+            />
+            <button type="submit" id="new-task-submit" title="Add new task">
+                Add
+            </button>
+        </form>
+
+        <main>
+            <section id="task-list">
+                <div id="task-list-header">
+                    <h2>Your List</h2>
+                    <div id="task-filters">
+                        <button class="active" data-filter="all">All</button>
+                        <button data-filter="active">Active</button>
+                        <button data-filter="completed">Completed</button>
+                    </div>
+                </div>
+                <div id="tasks">
+                    <!-- Task items will be injected here by JavaScript -->
+                </div>
+            </section>
+        </main>
+
+        <footer id="task-summary">
+            <p>You have <span id="task-count">0</span> pending tasks.</p>
+        </footer>
+    </div>
+    
+    <script src="script.js">
+
+
+    </script>
+</body>
+</html>
